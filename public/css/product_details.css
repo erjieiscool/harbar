@@ -1,0 +1,274 @@
+*,p{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+body a{
+    text-decoration: none;
+    font-size:12px;
+}
+body,html{
+    font-family: 'Segoe UI', MicrosoftYaHei, 微软雅黑, SimSun, 宋体, sans-serif;
+}
+div.breadCrumbs{
+    width:1180px;
+    height:40px;
+    margin:15px auto 0;
+}
+.breadCrumbs a{
+    color:#414042;
+    text-decoration: none;
+}
+/*---详情部分--*/
+div.details{
+    width:1180px;
+    margin:0 auto;
+    position:relative;
+}
+/*---右边详情div--*/
+div.details_base{
+    width:460px;
+    height:620px;
+    display:inline-block;
+    float:right;
+}
+div.productImg{
+    width:620px;
+    height:620px;
+    display:inline-block;
+    border:1px solid #d1d3d4;
+}
+div.details_base p{
+    margin:3px;
+}
+.productName{
+    font-size:16px;
+    color:#4c4c4c;
+}
+.productPrice{
+    font-size:16px;
+    color:rgb(65,64,66);
+}
+.count{
+    color:#808285;
+    font-size:14px;
+}
+.num{
+    margin-right:22px;
+}
+.service{
+    font-size:12px;
+    color:#808285;
+    padding:8px 0 12px;
+}
+.service>a{
+    color:#2075a8;
+}
+div.md>img{
+    border:1px solid #d1d3d4;
+    margin-right:3px;
+    margin-bottom: 50px;
+}
+.cate{
+    color:#4c4c4c;
+    padding:4px 10px;
+    margin-left:14px;
+    border:1px solid #6d6e71;
+}
+.sm{
+    height:32px;
+    width:32px;
+    border:1px solid #6d6e71;
+    margin-left:14px;
+}
+ul.product_key li{
+    margin:12px 0;
+}
+/*--input输入框--*/
+div.qty{
+    margin-left:10px;
+    border:1px solid #d1d3d4;
+    display:inline-block;
+    margin-right:5px;
+}
+div.qty input{
+    width:60px;
+    height:20px;
+    line-height:26px;
+    border:none;
+    background:#fff;
+    border-right:1px solid #d1d3d4;
+    margin:2px 6px;
+    text-align:center;
+}
+.qty>button{
+    width:8px;
+    height:8px;
+    border:none;
+    position:relative;
+    outline:0;
+}
+.qty>button.plus{
+   background:url("../img/bg.png") no-repeat 0 -160px;
+   top:-6px;
+   left:2px;
+}
+.qty>button.minus{
+    background:url("../img/bg.png") no-repeat 0 -39px;
+    top:4px;
+    left:-10px;
+}
+/*--加入购物车--*/
+div.clearfix{
+    margin-top:110px;
+}
+div.clearfix button{
+    height:40px;
+    width:132px;
+    margin-bottom: 15px;
+}
+div>.btn_gray{
+    background:#414042;
+    color:#e0d6c6;
+    border:1px solid #e0d6c6;
+    border-bottom: #231f20;
+    border-right: #231f20;
+}
+div>.btn_write{
+    background:#fff;
+    color:#808285;
+    margin-left:10px;
+    border:1px solid #e0d6c6;
+    border-left-color:#808285;
+    border-right-color:#808285;
+    border-bottom: 2px solid #808285;
+}
+.clearfix>p>a{
+    width:20px;
+    height:20px;
+    display: inline-block;
+}
+a.sina{
+    background:url("../img/bg.png") no-repeat -361px 0;
+}
+a.tenxun{
+    background:url("../img/bg.png") no-repeat -400px 0;
+}
+a.renren{
+    background:url("../img/bg.png") no-repeat -441px 0;
+}
+/*---------二楼商品详情-------*/
+div.plain{
+    font-size:14px;
+    color:#4c4c4c;
+    margin-top:90px;
+    
+}
+div.p_scombo{
+    height:27px;
+    border-bottom:1px solid #d1d3d4;
+    margin-bottom:30px;
+}
+div.p_scombo>ul>li{
+    float:left;
+    padding-bottom:5px;
+}
+div.p_scombo>ul>li:not(:first-child){
+    margin-left:40px;
+}
+.active{
+    border-bottom:2px solid #808285;
+}
+.details_table{
+    width:1180px;
+    height:67px;
+    
+}
+.details_table tr{
+    border-bottom:1px dashed #d1d3d4;
+    text-align:left;
+}
+.material{
+    width:300px;
+}
+.td1{
+    padding-left:15px;
+}
+div.descript{
+    margin:30px 0 -30px 15px;
+}
+div.descript>p{
+    padding:5px 0;
+}
+.div_hidden{
+    display:none;
+}
+/*--推荐商品--*/
+.Product-m{
+    height:280px;
+}
+ul.Recommend li{
+    float:left;
+    margin-right:16px;
+}
+ul.Recommend>li>p>a{
+    color:#808285;
+    font-size:14px;
+}
+ul.Recommend>li>p{
+    font-size:13px;
+    margin:3px 0;
+}
+/*--透明div样式--*/
+.mask{
+    width:309px;
+    height:309px;
+    position:absolute;
+    background:#868981;
+    opacity: .5;
+}
+.d_none{
+    display:none;
+}
+.div_big{
+    width:540px;
+    height:540px;
+    position:absolute;
+    border:1px solid #d1d3d4;
+    left:621px;
+    z-index:2;
+}
+.md_active{
+    border:1px solid #6d6e71 !important;
+}
+.super_mask{
+    width:620px;
+    height:620px;
+    position:absolute;
+    z-index: 0;
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

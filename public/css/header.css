@@ -1,0 +1,309 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	list-style: none;
+}
+body,html{
+	font-family: 'Segoe UI', MicrosoftYaHei, 微软雅黑, SimSun, 宋体, sans-serif;
+}
+div.head #title{
+	list-style:none;
+	display:flex;
+	justify-content:center;
+}
+/*-------顶部导航栏样式------*/
+div.head{
+    background:#F2F2F2;
+	height:31px;
+	padding:3px 0;
+	box-sizing:border-box;
+}
+div.head a{
+	text-decoration:none;
+	color:#606060;
+	font-size:12px;
+	margin:0px 10px;
+}
+#title a span{
+	color:red;
+	line-height:25px;
+}
+#a1{
+	margin-left:300px;
+	margin-right:10px;
+	}
+#a2{
+	margin-left:0px;
+}
+#login{
+	margin-right:0;
+}
+/*--图片--*/
+div.head span.Icon{
+	display:inline-block;
+	width:14px;
+	height:13px;
+	background:url("../img/bg.png") no-repeat;
+	position:relative;
+	top:3px;
+	margin-right:2px;
+}
+div.head span.Icon1 {
+	background-position:-20px 0;
+}
+/*--logo图片样式--*/
+header #logo{
+	padding:40px 0;
+	text-align:center;
+}
+/*第一个下拉列表样式*/
+div.head .content{
+	width:750px;
+	height:300px;
+	background:#fff;
+	border:1px solid #d1d3d4;
+	position:absolute;
+	left:10px;
+	display:none;
+	z-index:10;
+}
+div.head .content div{
+	float:left;
+	margin-top:20px;
+	position:relative;
+}
+/*小div样式*/
+div.head .content div:first-child{
+	width:190px;	
+}
+div.head div.list-c{
+    width:265px;
+}
+div.head .content ul li{
+	list-style:none;
+	margin-left:40px;
+}
+div.head h5.tab{
+	display:inline-block;
+	left:0px;
+	font-weight: 500;
+}
+/*小三角形-左边*/
+div.head .angle{
+	display:inline-block;
+	border:5px solid transparent;
+	border-left-color:gray;
+	position:absolute;
+	left:70px;
+	top:-13px;
+}
+/*小三角形-右边*/
+div.head .angle_right{
+	display:inline-block;
+	border:5px solid transparent;
+	border-left-color:gray;
+	position:absolute;
+	left:70px;
+	top:-13px;
+}
+div.head div.image_r{
+	height:240px;
+	width:290px;
+	border-left:1px solid #555d66;
+	text-align:center;
+}
+/*下拉列表的样式*/
+div.head .content_one{
+	position:relative;
+}
+div.head .content_one:hover .content{
+	display:block;
+}
+div.head a.fan{
+	margin:0px;
+}
+/*空间指引下拉列表样式*/
+div.head #ther{
+	margin-top:4px;
+}
+div.head div.image_r p{
+	font-size:14px;
+	margin-bottom:5px;
+	position:relative;
+	left:-56px;
+}
+div.head div.image_r p+p{
+	margin-left:-152px;
+}
+div.head div.image_r a{
+	color:#0aa1ed;
+	margin:0px;
+}
+/*------------------------------------------------------------------*/
+h5,h6,h3{
+    margin:0;
+}
+/*--导航栏样式--*/
+#nav>ul>li>a{
+    text-decoration: none;
+    color:#414042;
+    font-size:15px;
+}
+#nav>ul{
+	display:flex;
+	list-style:none;
+	justify-content:center;
+	margin-bottom:4px;
+}
+#nav>ul>li{
+	margin:0 40px;
+}
+/* #nav input{
+    height:25px;
+} */
+a.letter{
+    letter-spacing:5px;
+}
+
+/*-----------------下拉列表样式--------------------*/
+#list-big{
+    width:1178px;
+}
+#nav div.list_big{
+    background:#fff;
+    display: none;
+    padding:10px 0;
+    border:1px solid #d1d3d4;
+    position:absolute;
+    z-index:2;
+    top:32px;
+}
+#nav div.list_big ul a{
+    text-decoration: none;
+    color:#7a7a7a;
+    font-size:12px;
+}
+#nav div.list_left ul li h6 a{
+    color:#4c4c4c;
+	font-size:14px;
+	font-weight:500;
+}
+#nav div.list_big ul{
+    margin-bottom:30px;
+}
+#nav div.list_left{
+    display:flex;
+}
+#nav div.list_left div{
+    width:180px;
+    padding:15px 0 0 60px;
+}
+#nav div.list_big div{
+      float:left;
+}
+#nav div.list_big>div.list_right{
+    border-left:1px solid #d1d3d4;
+    float:right;
+    width:260px;
+    height:350px;
+    padding:10px 20px 0 20px;
+}
+#nav .list_right ul li a{
+    color:#4c4c4c;
+}
+#nav .list_right ul li h3 a{
+    font-size:22px;
+}
+#nav #only{
+    margin:5px 0;
+}
+#nav li #only-a{
+    color:blue;
+}
+/*---小三角形--*/
+#nav span.navArrow{
+    width:8px;
+    height:0px;
+    display:inline-block;
+    border:5px solid transparent;
+    border-left-color:gray;
+    margin-left:3px;
+}
+#nav li.p{
+    margin:5px 0;
+}
+#nav .single{
+    position:relative;
+}
+#nav .single:hover .list_big{
+    display:block;
+}
+/*--第二个下拉列表--*/
+#nav #list_f1{
+    width:638px;
+    left:-40px;
+}
+/*--第三个下拉列表--*/
+#nav #list_f2{
+    width:638px;
+    left:-40px;
+}
+/*-第四个---*/
+#nav #list_f3{
+    width:998px;
+    left:-300px;
+}
+/*--第五个--*/
+#nav #list_f4{
+    width:818px;
+    left:-200px;
+}
+/*--第六个--*/
+#nav #list_f5{
+    width:818px;
+    left:-350px;
+}
+#nav #list_f6{
+    width:998px;
+    left:-690px;
+}
+
+/*--搜索框--*/
+div.divSearch{
+	display:inline-block;
+	width:207px;
+	height:30px;
+	background: url("../img/bg.png") no-repeat -159px -580px;
+}
+.Search{
+	position:relative;
+	border:none;
+	outline: 0;
+}
+.inputSearch{
+	width:170px;
+	height:20px;
+	background:transparent;
+	top:-4px;
+	left:10px;
+}
+.btnSearch{
+	width:21px;
+	height:21px;
+	background: url("../img/bg.png") no-repeat -390px -580px;
+	border-radius: 50%;
+	top:2px;
+	left:6px;
+}
+
+
+
+
+
+
+
+
+
+
+

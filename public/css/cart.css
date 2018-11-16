@@ -1,0 +1,144 @@
+body,html{
+    font-family: 'Segoe UI', MicrosoftYaHei, 微软雅黑, SimSun, 宋体, sans-serif;
+    font-size:14px;
+}
+p,h3{
+    padding:0;
+    margin:0;
+}
+ul{
+    list-style:none;
+}
+.Float>li{
+    float:left;
+}
+/*清除浮动*/
+.myboth::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.fontColor{
+    color:#4c4c4c;
+}
+.inline{
+    display:inline-block;
+}
+div.cart{
+    width:1200px;
+    margin:50px auto 0;
+}
+div.wrapper{
+    background:#f2f2f2;
+    border-top:1px solid #7a7a7a;
+    margin-top:10px;
+}
+div.steps>ul>li{
+    width:292px;
+    height:40px;
+    background:#c6c6c6;
+    text-align:center;
+    line-height:40px;
+    margin:0 4px;
+    color:#fff;
+    margin-bottom:35px;
+}
+div.steps>ul>li.active{
+    background:#3a3a3a;
+}
+.shooping_th>ul{
+    height:40px;
+    line-height: 40px;
+}
+.box{
+    width:225px;    
+    margin-left:20px;
+}
+.product_name{
+    width:370px;
+}
+.product_price{
+    width:150px;
+}
+.product_num{
+    width:210px;
+}
+.product_operate{
+    width:225px;
+}
+.Center{
+    text-align: center;
+}
+.item_pic img{
+    width:150px;
+    height:150px;
+    border:1px solid #d1d3d4;
+    margin-left:10px;
+}
+div.item{
+    border-top:1px solid #eaeaea;
+    border-bottom:1px solid #eaeaea;
+    padding:10px 0;
+}
+div.item_info{
+    margin-top:25px;
+}
+.product_name p{
+    margin:8px 0;
+}
+.meta{
+    margin-top:40px;
+}
+.qty_val{
+    width:65px;
+    height:26px;
+    border:1px solid #d1d3d4;
+    background:#fff;
+    text-align: center;
+}
+.product_num>div>button{
+    border:none;
+    width:20px;
+    background:#f2f2f2;
+    outline:0;
+}
+div.item_operate>button{
+    border:none;
+    outline:0;
+    background:#f2f2f2;
+    color:#2075a8;
+}
+div.summary{
+    margin-top:30px;
+}
+.Total{
+    margin-left:35px;
+}
+#totalPrice{
+    margin-top:35px;
+    margin-bottom: 15px;
+}
+#totalPrice span{
+    font-size:20px;
+    color:#a32b75;
+    font-weight:bold;
+}
+.colour{
+    color:#808285; 
+}
+.btn{
+    width:130px;
+    height:40px;
+}
+.btn_gray{
+    margin-left:10px;
+    background:#414042;
+    border:1px solid#414042;
+    color:#fff;
+}
+.btn_white{
+    border:1px solid #808285;
+    border-bottom:2px solid #929496;
+    color:#4c4c4c;
+    background:#fff;
+}

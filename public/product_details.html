@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/product_details.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Product-details</title>
+</head>
+<body>
+    <header id="header"></header>
+    <div class="breadCrumbs">
+        <a href="#">首页</a>&nbsp;&gt;&nbsp;
+        <a href="#">家具</a>&nbsp;&gt;&nbsp;
+        <a href="#">餐厅家具</a>&nbsp;&gt;&nbsp;<a href="#">餐桌</a>
+    </div>
+    <div class="details">
+        <!--左边大图-->
+        <div class="mask d_none">
+        </div>
+        <!--透明玻璃板-->
+        <div class="super_mask"></div>
+        <!--放大镜-->
+        <div class="div_big d_none"></div>
+        <div class="productImg">
+            <img src="img/product_details/lg/113623-4.jpg">
+        </div>        
+        <!--右边详情-->
+        <div class="details_base">
+            <div>
+                <div>
+                    <!--<p class="productName">FarmHouse 餐桌</p>
+                    <p class="count"><span>编号：</span><span  class="num">113623</span><span>销量：11</span></p>
+                    <p class="productPrice">￥7980</p>
+                    <p class="service">该产品享受Harbor House门店所在城市免费安装服务。<a href="#">[点击了解详情]</a></p>-->
+                </div>
+                <div class="md">
+                    <!--<img src="img/product_details/md/113623-1.jpg">
+                    <img src="img/product_details/md/113623-2.jpg">
+                    <img src="img/product_details/md/113623-3.jpg">
+                    <img src="img/product_details/md/113623-4.jpg">-->
+                </div>
+                <ul class="product_key">
+                    <!--<li class="count">材质<span class="cate">俄罗斯榆木/榆木单板/环保人造板</span></li>
+                    <li class="count">颜色<img src="img/product_details/sm/113623.jpg" alt="" class="sm"></li>
+                    <li class="count">规格<span class="cate">直径132X高76CM</span></li>-->                    
+                </ul>
+                <ul>
+                    <li class="count">数量
+                        <div class="qty">
+                            <input type="text" value="1">
+                            <button class="plus"></button>
+                            <button class="minus"></button>
+                        </div>
+                        <span>件</span>
+                    </li>
+                </ul>
+                <div class="clearfix">
+                    <div style="display:inline-block" class="divCart">
+                        <button class="btn_gray" data-id="1">加入购物车</button>
+                    </div>
+                    <button class="btn_write">加入收藏夹</button>
+                    <p class="count">分享到：
+                        <a href="#" class="sina"></a>
+                        <a href="#" class="tenxun"></a>
+                        <a href="#" class="renren"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--二楼-->
+        <div class="plain">
+            <div class="p_scombo">
+                <ul>
+                   <li class="active shopp">商品详情</li>
+                    <li class="baoyang">售后保养</li>
+                </ul>
+            </div>
+            <div class="p_content">
+                <table class="details_table">
+                    <!--<tr>
+                        <th class="td1">商品系列</th>
+                        <td>FarHouse</td>
+                        <th>商品名称</th>
+                        <td>FarHouse餐桌</td>
+                        <th>商品货号</th>
+                        <td>113623</td>
+                    </tr>
+                    <tr>
+                        <th class="td1">材质</th>
+                        <td class="material">俄罗斯榆木/榆木单板/环保人造板</td>
+                        <th>规格</th>
+                        <td>直径132X高76CM</td>
+                        <th>风格</th>
+                        <td>自然乡村</td>
+                    </tr>-->     
+                </table>
+                <div class="descript div_block">   
+                    <!--<p>选用国产榆木，榆木单板，及环保人造板，纹理清晰，材质细腻，耐腐蚀，耐刮擦，适合雕琢，绿色环保。</p>
+                    <p>餐桌造型圆润、弧线柔雅；蜿蜒铺展的榆木纹理掩映于水洗棕色调中，带来丰富层次感，也令餐桌倍显质朴的自然气息，营造轻松惬意的用餐氛围。</p>-->
+                </div>
+                <div class="descript div_hidden maintain">
+                    <p>1、勿放在潮湿环境中； 2、避开水浸和过热及长期太阳直射； 3、不要将任何高温的饮料或食物直接放在家具上； 4、经常除尘，用吸水性好的软棉布； 5、避免坚硬物划伤。</p>
+                </div> 
+            </div>
+        </div>
+        <!--三楼-->
+        <div class="p_scombo plain">
+            <ul class="similar">
+                <li class="active" id="recommend1">类似风格推荐                   
+                </li>
+                <li id="recommend2">同等价位推荐                   
+                </li>
+                <li id="recommend3">同类热销品                    
+                </li>
+            </ul>
+        </div>
+        <div>
+            <div class="Product-m " id="div_a">
+                <ul class="Recommend">
+                    <li>
+                        <a href="#"><img src="img/products/105913.jpg" alt=""></a>
+                        <p><a href="#">Harbor&nbsp;可拉伸餐桌</a></p>
+                        <p>¥10800</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/products/105252.jpg" alt=""></a>
+                        <p><a href="#">Meadow&nbsp;Wood&nbsp;可拉伸圆形餐桌</a></p>
+                        <p>¥8980</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/products/104974.jpg" alt=""></a>
+                        <p><a href="#">Devin&nbsp;餐桌</a></p>
+                        <p>¥8980</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/products/104972.jpg" alt=""></a>
+                        <p><a href="#">Beldin&nbsp;餐桌</a></p>
+                        <p>¥15800</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/products/105494.jpg" alt=""></a>
+                        <p><a href="#">Parkview&nbsp;餐桌</a></p>
+                        <p>¥5980</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="Product-m div_hidden" id="div_b">
+                <ul class="Recommend">
+                    <li>
+                        <a href="#"><img src="img/products/105494.jpg" alt=""></a>
+                        <p><a href="#">Parkview&nbsp;餐桌</a></p>
+                        <p>¥5980</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/products/104972.jpg" alt=""></a>
+                        <p><a href="#">Eaton&nbsp;餐桌</a></p>
+                        <p>¥15800</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/products/104974.jpg" alt=""></a>
+                        <p><a href="#">Parker&nbsp;可拉伸圆形餐桌</a></p>
+                        <p>¥98980</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/products/105252.jpg" alt=""></a>
+                        <p><a href="#">Devin&nbsp;餐桌</a></p>
+                        <p>¥8980</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/products/105913.jpg" alt=""></a>
+                        <p><a href="#">Meadow&nbsp;Wood&nbsp;可拉伸圆形餐桌</a></p>
+                        <p>¥10800</p>
+                    </li>                    
+                </ul>
+            </div>
+            <div class="Product-m div_hidden" id="div_c">
+                <ul class="Recommend">
+                    <li>
+                        <a href="#"><img src="img/products/105252.jpg" alt=""></a>
+                        <p><a href="#">Meadow&nbsp;Wood&nbsp;可拉伸圆形餐桌</a></p>
+                        <p>¥8980</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/products/105913.jpg" alt=""></a>
+                        <p><a href="#">Harbor&nbsp;可拉伸餐桌</a></p>
+                        <p>¥10800</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/products/105494.jpg" alt=""></a>
+                        <p><a href="#">Parkview&nbsp;餐桌</a></p>
+                        <p>¥5980</p>
+                    </li>    
+                    <li>
+                        <a href="#"><img src="img/products/104974.jpg" alt=""></a>
+                        <p><a href="#">Devin&nbsp;餐桌</a></p>
+                        <p>¥98980</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/products/104972.jpg" alt=""></a>
+                        <p><a href="#">Beldin&nbsp;餐桌</a></p>
+                        <p>¥15800</p>
+                    </li>                    
+                </ul>
+            </div>    
+        </div>
+    </div>
+    <footer id="footer"></footer>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/product_details.js"></script>
+    <script>
+        
+    </script>
+</html>

@@ -1,0 +1,61 @@
+$(function(){
+    //创建link引用header.css
+    $("<link rel='stylesheet' href='css/header.css'>").appendTo("head")
+    //2.ajax请求header.html片段
+    $.ajax({
+        url:"http://localhost:9000/header.html",
+        type:"get",
+        success:function(res){
+            $("#header").replaceWith(res)
+            //搜索框搜索效果
+            var $btnSearch=$("div.divSearch>.btnSearch"),
+                $input=$btnSearch.parent().children(":first-child");
+            $btnSearch.click(function(){
+                var kw=$input.val();
+                if(kw!==""){
+                    location.href=`product.html?kwords=${kw}`;
+                }
+            })
+            //绑定事件：当键盘按键抬起时触发
+            $input.keyup(function(e){
+                console.log(e.keyCode);
+                if(e.keyCode==13){
+                    $btnSearch.click()
+                }
+            })
+            //在商品页获取kword
+            if(location.search.indexOf("kwords")!=-1){
+                var kwords=decodeURI(location.search.split("=")[1]);
+                $input.val(kwords);
+            }
+            //登录功能
+            $("#login").click(function(){
+                location.href="user_login.html?back="+location.href;
+            })
+            //头部登录状态
+            $.ajax({
+                url:"http://localhost:9000/user/islogin",
+                type:"get",
+                dataType:"json",
+                success:function(res){
+                    if(res.ok==-1){
+                        $("#signout").show().next().hide();
+                    }else{
+                        $("#wel").html("欢迎您,"+res.uname);
+                        $("#signout").hide().next().show();
+                    }
+                }
+            })
+            //注销
+            $(".cancel").click(function(){
+                $.ajax({
+                    url:"http://localhost:9000/user/signout",
+                    type:"get",
+                    success:function(){
+                        location.reload();
+                    }
+                })
+            })
+        }
+    })
+})

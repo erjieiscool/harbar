@@ -1,0 +1,97 @@
+/*--底部样式设置--*/
+body,html{
+	font-family: 'Segoe UI', MicrosoftYaHei, 微软雅黑, SimSun, 宋体, sans-serif;
+}
+#hr{
+	border-color:D9DADB;
+	margin-top:80px;
+	margin-bottom:35px;
+}
+body,ul,p{
+	margin:0;
+	padding:0;
+}
+#footer ul li{
+	list-style:none;
+	margin:12px 0;
+}
+#footer a{
+	text-decoration:none;
+	color:#808285;
+}
+#footer{
+	margin:0;
+	display:flex;
+	font-size:15px;
+	padding:0 100px;
+	justify-content:space-around; 
+}
+.first_li{
+	color:#414042;
+}
+#footer_font{
+	width:100%;
+	height:70px;
+	background:#3a3a3a;
+	margin-top:50px;
+	text-align:center;
+}
+#footer_font a{
+	line-height:70px;
+	margin:0 30px;
+	color:#787776;
+	font-size:14px;
+	text-decoration:none;
+}
+article{
+	font-size:13px;
+	text-align:center;
+	margin-top:20px;
+}
+p.QRcode{
+	margin-top:14px;
+}
+.location{
+	position:relative;
+}
+.codeText{
+	top:-32px;
+	left:5px;
+}
+div>h3{
+	font-weight:500;
+}
+#footer div>button{
+	background:url("../img/footer/search.jpg") no-repeat;
+	width:40px;
+	height:40px;
+	border:none;
+	left:-5px;
+}
+div>input{
+	height:32px;
+	width:200px;
+	top:-18px;
+	background:#e6e7e8;
+	border:none;
+}
+.App{
+	background:url("../img/bg.png") no-repeat -200px 0px;
+	display:inline-block;
+	width:40px;
+	height:40px;
+}
+.left{
+	top:-13px;
+	left:8px;
+}
+#Des{
+	top:-25px;
+	left:50px;
+}
+#sheji{
+	top:-25px;
+	left:6px;
+}
+
+

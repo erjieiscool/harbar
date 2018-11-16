@@ -1,0 +1,225 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+body a{
+    text-decoration: none;
+}
+body,html{
+    font-family: 'Segoe UI', MicrosoftYaHei, 微软雅黑, SimSun, 宋体, sans-serif;
+}
+div.breadCrumbs{
+    width:1180px;
+    height:40px;
+    margin:0 auto;
+}
+.breadCrumbs a{
+    color:#414042;
+    text-decoration: none;
+}
+div.packing{
+    width:1180px;
+    margin:0 auto;
+    display:flex;
+}
+/*--------------------左边div----------------------*/
+div.productSide_fl{
+    width:215px;
+    min-height:670px;
+    border:1px solid #d1d3d4;
+    padding:0 0 32px 15px;
+}
+div.productSide_fl h6{
+    width:198px;
+    height:46px;
+    padding:15px 0 0 5px;
+    font-size:14px;
+    color:#4c4c4c;
+    border-bottom:1px solid #d1d3d4;
+}
+div.productSide_fl a{
+    color:#7a7a7a;
+    text-decoration: none;
+}
+div.productSide_fl>ul{
+    margin-left:15px;
+}
+div.productSide_fl ul li{
+    padding:4px 0;
+}
+/*---------------左边下拉列表---------------*/
+div.productSide_fl>ul>li>div li{
+    margin-left: 24px;
+
+}
+/*---小三角形--*/
+.trigon-r{
+    display:inline-block;
+    width:8px;
+    height:9px;
+    margin-right: 16px;
+    background:url("../img/bg.png") no-repeat;
+    background-position: -22px -40px;
+}
+/*-------下拉列表隐藏效果-------*/
+.fade{
+    display:none;
+}
+.in{
+    display: block;
+}
+.advert{
+    margin-left:-16px;
+    margin-top:140px;
+}
+/*--------------------------右边div--------------------------*/
+div.productSide_fr{
+    width:900px;
+    margin:0 20px 80px;
+}
+div.productSide_fr div{
+    width:900px;
+}
+body a{
+    text-decoration: none;
+    font-size:12px;
+}
+/*--背景图--*/
+#fr_f1{
+     background:url("../img/product/furniture_01.jpg") no-repeat;
+     height:617px;
+}
+#fr_f2{
+    background:url("../img/product/furniture_02.jpg") no-repeat;
+    height:544px;
+}
+#fr_f3{
+    background:url("../img/product/furniture_03.jpg") no-repeat;
+    height:566px;
+}
+#fr_f4{
+    background:url("../img/product/furniture_04.jpg") no-repeat;
+    height:564px;
+}
+#fr_f5{
+    background:url("../img/product/furniture_05.jpg") no-repeat;
+    height:561px;
+}
+#fr_f6{
+    background:url("../img/product/furniture_06.jpg") no-repeat;
+    height:388px;
+}
+
+#fr_f7{
+    background:url("../img/product/furniture_07.jpg") no-repeat;
+    height:566px;
+}
+#fr_f8{
+    background:url("../img/product/furniture_08.jpg") no-repeat;
+    height:600px;
+}
+#fr_f9{
+    background:url("../img/product/furniture_09.jpg") no-repeat;
+    height:566px;
+}
+#fr_f10{
+    background:url("../img/product/furniture_10.jpg") no-repeat;
+    height:598px;
+}
+#fr_f11{
+    background:url("../img/product/furniture_11.jpg") no-repeat;
+    height:565px;
+}
+#fr_f12{
+    background:url("../img/product/furniture_12.jpg") no-repeat;
+    height:566px;
+}
+#fr_f13{
+    background:url("../img/product/furniture_13.jpg") no-repeat;
+    height:599px;
+}
+/*--图片a标签样式--*/
+.productSide_fr>div a{
+    display: inline-block;
+    position:relative;
+}
+a.pro_big{
+    width:900px;
+}
+#fr_f1>a{
+    height:617px;
+    top:-5px;
+}
+#fr_f2>a:first-child{
+    top:27px;
+    width:351px;
+    height:516px;
+}
+#fr_f2>a:last-child{
+    width:520px;
+    height:516px;
+    top:27px;
+    left:26px;
+}
+#fr_f3>a{
+    height:534px;
+    top:30px;
+}
+#fr_f4>a{
+    height:536px;
+    top:28px;
+}
+#fr_f5>a:first-child{
+    width:550px;
+    height:531px;
+    top:28px;
+}
+#fr_f5>a:last-child{
+    top:28px;
+    height:531px;
+    width:320px;
+    left:26px;
+}
+#fr_f6>a{
+    width:900px;
+    height:360px;
+    top:28px;
+}
+#fr_f7>a{
+    height:536px;
+    top:29px;
+}
+a.medl-child{
+    width:510px;
+    height:570px;
+    top:29px;
+}
+a.small-child{
+    width:362px;
+    height:570px;
+    top:29px;
+    left:25px;
+}
+#fr_f9>a{
+    height:536px;
+    top:29px;
+}
+#fr_f11>a{
+    height:536px;
+    top:29px;
+}
+#fr_f12>a{
+    height:536px;
+    top:29px;
+}
+
+
+
+
+
+
+
+
+
+

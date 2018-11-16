@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <header id="header"></header>
+    <div class="cart">
+        <div class="steps ">
+            <ul class="Float myboth">
+                <li class="active">我的购物车</li>
+                <li>确定订单信息</li>
+                <li>选择支付方式</li>
+                <li>完成</li>
+            </ul>
+        </div>
+        <div class="fontColor">温馨提示：购物车中的商品无法保留库存，请您及时结算，商品库存以订单结算时为准！</div>
+        <div class="wrapper">
+            <div class="shooping_th">
+                <ul class="Float myboth fontColor">
+                    <li class="box"><input type="checkbox" checked="checked">全选</li>
+                    <li class="product_name">商品信息</li>
+                    <li class="product_price Center">单价</li>
+                    <li class="product_num Center">数量</li>
+                    <li class="product_operate Center">操作</li>
+                </ul>
+            </div>
+            <div class="itembox">
+                <div class="item">
+                    <ul class="Float myboth">
+                        <li class="box">
+                            <input type="checkbox" checked="checked" style="position:relative;top:-70px;">
+                            <div class="item_pic inline">                               
+                                <a href="#" target="_blank">
+                                    <img src="img/cart/113986.jpg" name="picture">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="product_name">
+                            <div class="item_info inline">
+                                <p class="fontColor">Valentine 夏夜清风香氛蜡烛</p>
+                                <p class=" colour">大豆蜡/精油；纯棉烛芯/玻璃-绿色</p>
+                                <p class=" colour">规格:直径9X高11.5CM</p>
+                            </div>
+                        </li>
+                        <li class="product_price Center">
+                            <div class="inline meta">
+                                <p>￥258.00</p>
+                            </div>
+                        </li>
+                        <li class="product_num Center">
+                            <div class="inline meta">
+                                <button>-</button>
+                                <input type="text" maxlength="3" value="1" class="qty_val">
+                                <button>+</button>
+                            </div>
+                        </li>
+                        <li class="product_operate Center">
+                            <div class="item_operate inline meta">
+                                <button>[&nbsp;确认&nbsp;]</button>
+                                <button>[&nbsp;收藏&nbsp;]</button>
+                                <button>[&nbsp;删除&nbsp;]</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="summary colour" style="text-align:right;">
+            <div>
+                <span>商品数量总计：<span class="fontColor">1</span>&nbsp;件</span>
+                <span class="Total">商品金额（不含运费）：<span>￥258.00</span></span>
+            </div>
+            <div id="totalPrice">
+                <p>合计:<span>￥258.00</span></p>
+            </div>
+            <div>
+                <button class="btn_white btn">继续购物</button>
+                <button class="btn_gray btn">下一步</button>
+            </div>
+        </div>
+    </div>
+    <footer id="footer"></footer>
+</body>
+</html>
