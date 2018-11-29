@@ -23,11 +23,35 @@ router.get("/add",(req,res)=>{
                 res.end();
             })
         }
-    })
-    
+    })    
 })
-
-
+//查找我的购物车
+router.get("/items",(req,res)=>{
+    var user_id=req.session.user_id;
+    var sql=`SELECT *,(select md from hd_product_pic where hd_product_pic.product_id=hd_shopping_cart.product_id limit 1)as md FROM hd_shopping_cart inner join hd_laptop on hd_laptop.product_id=hd_shopping_cart.product_id where user_id=?`;
+    pool.query(sql,[user_id],(err,result)=>{
+        if(err) console.log(err);
+        res.writeHead(200);
+        res.write(JSON.stringify(result));
+        res.end();
+    })
+})
+//修改购物车数据
+router.get("/update",(req,res)=>{
+    var tid=req.query.tid;
+    var count=req.query.count;
+    if(count>0){
+        var sql=`update hd_shopping_cart set count=? where tid=?`;
+        var data=[count,tid];
+    }else{
+        var sql=`delete from hd_shopping_cart where tid=?`;
+        var data=[tid];
+    }
+    pool.query(sql,data,(err,result)=>{
+        if(err) console.log(err);
+        res.end();
+    })
+})
 
 
 

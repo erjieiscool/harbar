@@ -6,7 +6,7 @@ $(function(){
         url:"http://localhost:9000/header.html",
         type:"get",
         success:function(res){
-            $("#header").replaceWith(res)
+            $("#header").replaceWith(res);
             //搜索框搜索效果
             var $btnSearch=$("div.divSearch>.btnSearch"),
                 $input=$btnSearch.parent().children(":first-child");
@@ -53,6 +53,30 @@ $(function(){
                     type:"get",
                     success:function(){
                         location.reload();
+                    }
+                })
+            })
+            //购物车功能
+            $("header").on("click","#cart",function(e){
+                e.stopPropagation();
+                e.preventDefault();
+                $.ajax({
+                    url:"http://localhost:9000/user/islogin",
+                    type:"get",
+                    dataType:"json",
+                    success:function(res){
+                        if(res.ok=="-1"){
+                            alert("暂未登录，无法使用购物车");
+                        }else{
+                            $.ajax({
+                                url:"http://localhost:9000/cart/items",
+                                type:"get",
+                                dataType:"json",
+                                success:function(res){          
+                                    location.href="cart.html";
+                                }
+                            })
+                        }
                     }
                 })
             })

@@ -134,6 +134,9 @@ $(function(){
     //加入购物车
     $addCart=$(".btn_gray").parent();
     $addCart.on("click",function(e){
+         var $btn=$(this);
+         console.log($btn.attr("data-id"))
+         var product_id=$btn.children().attr("data-id");
         (async function(){
             var res=await $.ajax({
                 url:"http://localhost:9000/user/islogin",
@@ -141,11 +144,9 @@ $(function(){
                 dataType:"JSON"
             });
             if(res.ok==1){
-                e.preventDefault();        
-                var $btn=$(this);
-                var product_id=$btn.children().attr("data-id");
+                e.preventDefault();         
                 var count=$(".qty").children().first().val();
-                console.log(count,product_id);
+                console.log(count,"id+"+product_id);
                 await $.ajax({
                     url:"http://localhost:9000/cart/add",
                     type:"get",
