@@ -23,7 +23,6 @@ $(function(){
                         data:{uname,upwd},
                         dataType:"json",
                         success:function(){
-                            console.log(999)
                             console.log(res)
                         }                             
                     })                
@@ -33,7 +32,7 @@ $(function(){
     //密码获取焦点事件
     $("#upwd").focus(function(){
         $(".divUpwd").removeClass("hidden");
-        console.log(123);
+        //console.log(123);
     })
     $("#upwd").blur(function(){
         $(".divUpwd").addClass("hidden");

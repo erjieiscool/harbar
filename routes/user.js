@@ -73,7 +73,6 @@ router.post("/register",(req,res)=>{
 	var $uname=obj.uname;
 	var $upwd=obj.upwd;
 	if(!$upwd){
-		console.log("密码空")
 		res.send("用户密码不能为空");
 		return;
 	}
